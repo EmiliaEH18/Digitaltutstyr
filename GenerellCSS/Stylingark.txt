@@ -1,0 +1,40 @@
+STYLINGARK :
+
+IDEER:
+
+ - Forkskjellige stiler på hver sak til å passe tema.
+    - Cyberpunk/Blade runner type stil
+    
+ - Hovedside endrer seg etter hvert som man scroller fra positive nyheter til mer negative
+ 
+
+
+
+
+FONT:
+    LINE-HEIGHT: 1.5
+    LETTER-SPACING: 2.5px
+
+
+    FONT: Dosis {
+        @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+            
+            .dosis-<uniquifier> {
+            font-family: "Dosis", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: <weight>;
+            font-style: normal;
+            }
+
+    }
+
+FARGER:
+
+    (Nøyrtale farger)
+
+    TEKST:
+    TEKSTBOKSER:
+
+
+
+
