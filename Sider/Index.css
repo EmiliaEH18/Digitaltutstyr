@@ -8,7 +8,7 @@ section {
 
 body {
     background: linear-gradient(to bottom,
-            rgb(3, 248, 48) 0%,
+            #03f830 0%,
             #eb07aa 50%,
             #feb705 100%);
     min-height: 100vh;
