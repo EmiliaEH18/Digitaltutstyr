@@ -1,0 +1,11 @@
+header{
+    background-color: black;
+    height: 100px;
+    display: flex;
+}
+
+img{
+    object-fit: cover;
+    overflow: hidden;
+    height: 100px;
+}
