@@ -2,10 +2,37 @@ header{
     background-color: black;
     height: 100px;
     display: flex;
+    justify-content: space-between;
+    border-bottom: 4px solid rgb(255, 6, 197);
 }
 
 img{
     object-fit: cover;
     overflow: hidden;
-    height: 100px;
+    height: 90px;
+    margin-left: 50px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+a:hover{
+    background-color: rgb(255, 6, 197);
+    transition: 0.35s ease;
+    padding: 10px;
+    border-radius: 30px;
+    color: black;
+
+
 }
