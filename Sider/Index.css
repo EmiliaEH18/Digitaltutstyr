@@ -7,16 +7,15 @@ section {
 }
 
 body {
-  background: linear-gradient(
-    to bottom,
-    rgb(3, 248, 48) 0%,
-    #eb07aa 50%,
-    #feb705 100%
-  );
-  min-height: 100vh;
+    background: linear-gradient(to bottom,
+            rgb(3, 248, 48) 0%,
+            #eb07aa 50%,
+            #feb705 100%);
+    min-height: 100vh;
 }
 
 .sak {
     border: 10px black solid;
+    background-color: white;
 
 }
