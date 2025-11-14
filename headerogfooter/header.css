@@ -37,7 +37,28 @@ nav a:hover{
 
 }
 
+@media (width<580px){
+    nav a{
+        font-size: 13px;
+    }
 
-footer{
-    
+    .bildelogo img{
+        margin-left: 30px;
+    }
+}
+@media(width<430px){
+
+    .bildelogo img{
+     
+        margin-left: 5px;
+        align-items: center;
+    }
+    nav{
+        width: 80%;
+    }
+
+    nav a{
+        font-size: 10px;
+    }
+
 }
