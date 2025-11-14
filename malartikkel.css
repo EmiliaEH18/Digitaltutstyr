@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+section {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.introbilde {
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    border: 1px solid black;
+}
+
+.journalistbox {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.journalister {
+    border: 1px solid black;
+    width: 100px;
+    height: 30px;
+}
+
+.bildetekst {
+    display: flex;
+    flex-direction: row;
+}
+
+.sak {
+    padding: 100px;
+}
