@@ -6,7 +6,7 @@ header{
     border-bottom: 4px solid rgb(255, 6, 197);
 }
 
-img{
+.bildelogo img{
     object-fit: cover;
     overflow: hidden;
     height: 90px;
