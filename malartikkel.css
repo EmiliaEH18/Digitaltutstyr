@@ -26,12 +26,23 @@ section {
     justify-content: center;
     align-items: center;
     gap: 20px;
+
 }
 
 .journalister {
     border: 1px solid black;
     width: 100px;
-    height: 30px;
+    height: 50px;
+    color: hotpink;
+    font-weight: bold; 
+    padding: 5px;
+}
+
+.journalist {
+    color: gray;
+    font-size: smaller;
+    font-weight: lighter;
+    text-decoration: underline;
 }
 
 .bildetekst {
