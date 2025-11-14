@@ -1,9 +1,8 @@
 section {
     display: grid;
     grid-template-columns: repeat(3, 200px);
+    justify-content: center;
     gap: 20px;
-
-
 }
 
 body {
@@ -18,4 +17,12 @@ body {
     border: 10px black solid;
     background-color: white;
 
+}
+
+
+@media (width < 650px) {
+    section {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 10px;
+    }
 }
