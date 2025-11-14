@@ -1,6 +1,6 @@
 section {
     display: grid;
-    grid-template-columns: repeat(3, 200px);
+    grid-template-columns: repeat(3, 300px);
     gap: 20px;
 
 
@@ -17,5 +17,12 @@ body {
 .sak {
     border: 10px black solid;
     background-color: white;
+}
+
+.sak img {
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+    object-position: left;
 
 }
