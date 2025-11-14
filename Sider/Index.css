@@ -9,9 +9,9 @@ section {
 
 body {
     background: linear-gradient(to bottom,
-            #03f830 0%,
-            #eb07aa 50%,
-            #feb705 100%);
+            #ffffff 0%,
+            #696868 50%,
+            #000000 100%);
     min-height: 100vh;
 }
 
