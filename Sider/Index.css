@@ -1,5 +1,9 @@
 section {
     display: grid;
+    grid-template-columns: repeat(3, 200px);
+    gap: 20px;
+
+
 }
 
 body {
@@ -14,7 +18,5 @@ body {
 
 .sak {
     border: 10px black solid;
-    grid-template-columns: repeat(3,200px);
-    width: 200px;
-    margin: 20px;
+
 }
