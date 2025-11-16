@@ -1,21 +1,36 @@
 section {
     display: grid;
-    grid-template-columns: repeat(3, 200px);
+    grid-template-columns: repeat(3, 300px);
     gap: 20px;
+    justify-content: center;
 
 
 }
 
 body {
     background: linear-gradient(to bottom,
-            #03f830 0%,
-            #eb07aa 50%,
-            #feb705 100%);
+            #ffffff 0%,
+            #696868 50%,
+            #000000 100%);
     min-height: 100vh;
 }
 
 .sak {
     border: 10px black solid;
     background-color: white;
+}
 
+.sak img {
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+    object-position: left;
+
+}
+
+@media (width < 950px) {
+    section {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 10px;
+    }
 }
