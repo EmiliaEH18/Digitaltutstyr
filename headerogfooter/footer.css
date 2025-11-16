@@ -1,0 +1,56 @@
+.footer {
+    background: black;
+    color: white;
+    padding: 40px 20px;
+    
+    border-top: 3px solid rgb(52, 207, 231);
+    box-shadow: 0 0 25px rgb(52, 207, 231);
+    
+}
+
+.footercontainer{
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+
+}
+
+.footer-section {
+    margin: 15px;
+
+}
+
+.footer a {
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.footer a:hover {
+    color: rgb(52, 207, 231);
+    text-shadow: 0 0 10px rgb(52, 207, 231);
+}
+
+.footer h3, .footer h4 {
+    margin-bottom: 10px;
+    color: rgb(52, 207, 231);
+    text-shadow: 0 0 10px rgb(52, 207, 231)
+}
+
+.nederst{
+    border-top: 2px solid white;
+    justify-content: space-between;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    overflow: hidden;
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+
+.nederst img{
+    width: 10%;
+
+}
