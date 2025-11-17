@@ -3,7 +3,8 @@ header{
     height: 100px;
     display: flex;
     justify-content: space-between;
-    border-bottom: 4px solid rgb(255, 6, 197);
+    border-bottom: 3px solid rgb(255, 6, 197);
+    box-shadow: 0 0 25px rgb(255, 6, 197);
 }
 
 .bildelogo img{
@@ -37,7 +38,28 @@ nav a:hover{
 
 }
 
+@media (width<580px){
+    nav a{
+        font-size: 13px;
+    }
 
-footer{
-    
+    .bildelogo img{
+        margin-left: 30px;
+    }
+}
+@media(width<430px){
+
+    .bildelogo img{
+     
+        margin-left: 5px;
+        align-items: center;
+    }
+    nav{
+        width: 80%;
+    }
+
+    nav a{
+        font-size: 10px;
+    }
+
 }
