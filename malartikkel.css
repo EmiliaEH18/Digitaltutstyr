@@ -34,11 +34,6 @@ section {
     text-decoration: underline;
 }
 
-.bildetekst {
-    display: flex;
-    flex-direction: row;
-}
-
 .infotekst {
     padding: 100px;
 }
@@ -61,20 +56,6 @@ section {
   scroll-snap-align: center;
 }
 
-/*
-.carousel button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0,0,0,0.4);
-  color: white;
-  border: none;
-  padding: .6rem .9rem;
-  cursor: pointer;
-  border-radius: 6px;
-}
-*/ 
-
 .arrow{
   position:absolute;
   top:50%;
@@ -86,17 +67,25 @@ section {
   cursor:pointer;
   border-radius:6px;
 }
+
 .arrow.left{ left:8px; }
 .arrow.right{ right:8px; }
 
-.prev { left: 10px; }
-.next { right: 10px; }
 
+.slide {
+  flex-shrink: 0;
+  width: 100%;
+  scroll-snap-align: center;
+}
 
-
+figcaption {
+  margin-top: 6px;
+  font-size: 0.9rem;
+  color: #444;
+}
 
 .andresaker {
-    width: 1000;
+    width: 1000px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     border-top: 1px solid black;
