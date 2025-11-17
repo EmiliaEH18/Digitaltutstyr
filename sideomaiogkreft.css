@@ -1,0 +1,140 @@
+.topp h1 {
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.topp h2{
+  margin-bottom: 20px;
+}
+
+section {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.introbilde {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.journalistbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+}
+
+.journalister {
+  border: 1px solid black;
+  width: 100px;
+  height: 70px;
+  color: hotpink;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.journalist {
+  color: gray;
+  font-size: smaller;
+  font-weight: lighter;
+  text-decoration: underline;
+}
+
+.bildetekst {
+  display: flex;
+  flex-direction: row;
+}
+
+.infotekst {
+  padding: 100px;
+}
+
+.carousel {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+}
+
+.track {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.track img {
+  flex-shrink: 0;
+  scroll-snap-align: center;
+}
+
+/*
+.carousel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.4);
+  color: white;
+  border: none;
+  padding: .6rem .9rem;
+  cursor: pointer;
+  border-radius: 6px;
+}
+*/
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.45);
+  color: white;
+  border: none;
+  padding: .6rem;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.arrow.left {
+  left: 8px;
+}
+
+.arrow.right {
+  right: 8px;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+
+
+
+.andresaker {
+  width: 1000;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.saker {
+  width: 100%;
+  height: 500px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: 1px solid black;
+
+}
+
+.sakerimg {
+  padding: 30px;
+  border: 1px solid black;
+}
