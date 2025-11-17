@@ -25,7 +25,7 @@ h1{
 
 }
 
-p{
+.info p{
     font-size: 30px;
     letter-spacing: 2px;
     line-height: 1.5;
@@ -67,4 +67,6 @@ li{
     text-shadow: 0 0 15px aqua;
     font-size: 40px;
 }
+
+
 
