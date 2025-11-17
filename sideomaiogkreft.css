@@ -4,6 +4,9 @@
   margin-bottom: 20px;
 }
 
+.topp{
+  margin-top: 100px;
+}
 .topp h2{
   margin-bottom: 20px;
 }
@@ -27,6 +30,21 @@ section {
 
 }
 
+.infotekst h2{
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+.tjukk{
+  font-weight: bolder;
+}
+
+.infotekst p{
+   margin-top:  10px;
+   margin-bottom: 10px;
+   line-height: 1.5;
+
+}
+
 .journalister {
   border: 1px solid black;
   width: 100px;
@@ -46,6 +64,7 @@ section {
 .bildetekst {
   display: flex;
   flex-direction: row;
+  margin-top: 7px;
 }
 
 .infotekst {
