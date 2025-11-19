@@ -1,9 +1,10 @@
 section {
     display: grid;
-    grid-template-columns: repeat(3, 300px);
+    grid-template-columns: repeat(3, 250px);
     gap: 20px;
     justify-content: center;
     padding: 50px;
+    min-height: 100vh;
 
 
 
@@ -31,7 +32,7 @@ body::before {
     background: url("bilder/bakgrunn-3.jpg") center/cover no-repeat;
     z-index: -2;
 
-    animation: kenburns-bak 20s ease-in-out infinite alternate;
+    animation: kenburns-bak 10s ease-in-out infinite alternate;
 }
 
 
@@ -51,11 +52,11 @@ body::after {
 
 @keyframes kenburns-bak {
     from {
-        transform: scale(1) translateY(-50px);
+        transform: scale(1) translateY(0px);
     }
 
     to {
-        transform: scale(1.07) translateY(-100px);
+        transform: scale(1.07) translateY(-50px);
     }
 }
 
@@ -87,15 +88,15 @@ body::after {
     background-color: white;
     text-align: center;
     margin: 50px;
-    filter: opacity(0.7);
-    box-shadow: 3px 3px 10px rgb(255, 255, 255);
+
+    box-shadow: 3px 3px 10px rgb(121, 18, 97);
 
 
 }
 
 .sak:hover {
     scale: 1.2;
-    box-shadow: 20px 20px 50px rgb(255, 255, 255);
+    box-shadow: 20px 20px 50px rgb(255, 6, 197);
     filter: opacity(1);
 
 
