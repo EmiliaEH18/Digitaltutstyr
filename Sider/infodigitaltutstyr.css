@@ -1,4 +1,4 @@
-.topp{
+.topp {
     height: 60vh;
     background-color: rgb(21, 21, 63);
     display: flex;
@@ -7,37 +7,90 @@
 
 }
 
-.topp img{
+.topp img {
     width: 600px;
     margin-right: 100px;
 }
 
-.topp h1{
+.topp h1 {
     color: white;
     font-size: 70px;
     margin-left: 100px;
     margin-bottom: 30px;
-    
+
 }
 
-.overts{
+.overts {
     display: flex;
     flex-direction: column;
 
 }
 
-.overst p{
+.overst p {
     color: white;
     margin-left: 100px;
     font-size: 20px;
 }
 
-.info{
+.info {
     background-color: white;
     height: 1000px;
     color: rgb(21, 21, 63);
 }
 
-.info{
+.bilderogtekst {
+    height: 100%;
+}
 
+.boks {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    width: 50%;
+    height: 200px;
+    margin: auto;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.boks img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.liten {
+    overflow: hidden;
+    width: 40%;
+    height: 200px;
+
+}
+
+.stor {
+    font-size: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-right: 70px;
+    margin-left: 70px;
+
+
+}
+
+a{
+    text-decoration: none;
+    color: rgb(21, 21, 63);
+}
+
+.info h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-size: 50px;
+}
+
+.boks:hover{
+    transform: scale(1.05); 
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
 }
