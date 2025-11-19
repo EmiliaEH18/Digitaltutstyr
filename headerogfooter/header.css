@@ -29,12 +29,12 @@ nav a {
     font-size: 20px;
     padding: 10px;
     border-radius: 30px;
+    transition: 0.35s ease-in-out;
 }
 
 nav a:hover {
     background-color: rgb(255, 6, 197);
-    transition: 0.35s ease-in-out;
-    color: black;
+    filter: brightness(1.2) color: black;
 
 
 }

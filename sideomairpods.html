@@ -30,7 +30,7 @@
     <main>
         <section>
 
-            <h1> Overskrift </h1>
+            <h1> Airpods live translation </h1>
             <h2> Denne saken handler om ... </h2>
 
             <div class="introbilde">
@@ -56,9 +56,11 @@
 
         <section class="infotekst">
             <h2> Dette skjedde ... </h2>
-            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, maxime quidem cumque delectus
-                voluptatum odio dolor dolorem sed repellat commodi nostrum amet qui temporibus, ut obcaecati deleniti
-                accusamus architecto et?</p>
+            <p> AirPods kan oversette samtaler med Live Translation når de er koblet til en iPhone med Apple
+                Intelligence aktivert. For å bruke funksjonen, sett AirPods i ørene, åpne Oversett-appen på iPhonen,
+                trykk på "Direkte", velg språkene og trykk "Start oversetting". Du kan også starte en samtale ved å
+                holde på stilken på begge AirPods samtidig eller be Siri om å starte oversetting.
+            </p>
             <img src="bilder/pc.jpg.avif">
             <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, maxime quidem cumque delectus
                 voluptatum odio dolor dolorem sed repellat commodi nostrum amet qui temporibus, ut obcaecati deleniti
@@ -74,24 +76,83 @@
                 accusamus architecto et?</p>
 
 
+
+            <h1> Hvordan funker det</h1>
             <div class="carousel">
                 <button class="arrow left">◀</button>
 
                 <div class="track">
                     <figure class="slide">
-                        <img src="bilder/pc.jpg.avif">
-                        <figcaption>Tekst for bilde 3</figcaption>
+                        <h2> Signalinnhenting fra AirPods </h2>
+                        <p> AirPods Pro/Max bruker:
+                        <ul>
+                            <li>Beamforming-mikrofoner for å isolere stemmen din</li>
+                            <li>Støykansellering (ANC/Hear-Through) for å forbedre signal-til-støy-forholdet</li>
+                            <li>On-device DSP i H1/H2-chipen for å gi iPhone et renset talefragment</li>
+                        </ul>
+                        Dette betyr at stemmen din blir “pre-prosessert” før den sendes til iPhone, noe som gjør
+                        talegjenkjenningen mer nøyaktig.</p>
                     </figure>
 
                     <figure class="slide">
-                        <img src="bilder/pc.jpg.avif">
-                        <figcaption>Tekst for bilde 3</figcaption>
+                        <h2> Real-Time Speech Recognition </h2>
+                        <p> Når lyden når iPhone, går den gjennom Apple sin on-device ASR-modell:
+                            Basert på nevrale nettverk (encoder–decoder modeller)
+                            Benytter feature extraction (log-Mel-spectrogram etc.)
+                            Kjører streaming-mode, der modellen gir løpende partielle resultater (ikke venter til du er
+                            ferdig å snakke)
+                            Apple bruker en variant av en Conformer-modell (Convolution + Transformer), som er optimal
+                            for mobil chip-arkitektur.</p>
                     </figure>
 
                     <figure class="slide">
-                        <img src="bilder/pc.jpg.avif">
-                        <figcaption>Tekst for bilde 3</figcaption>
+                        <h2> Maskinoversettelse </h2>
+                        <p>Når ASR gir en løpende transkripsjon, sendes tekstfragmentene til Apple sin Neural Machine
+                            Translation-modell, som:
+                            er en Transformer-basert sekvens-til-sekvens-modell
+                            kjører enten on-device for støttede språk eller med privat relay til Apple-servere hvis
+                            språket
+                            krever større modeller
+                            oversetter i del-setninger («segmenting») for å gi rask respons uten å vente på hele
+                            setninger
+                            Apple optimaliserer mye med:
+                            BPE-tokenisering (Byte Pair Encoding)
+                            latensoptimalisert decoding (short beam search)</p>
                     </figure>
+
+                    <figure class="slide">
+                        <h2> Tekst-til-tale </h2>
+                        <p>Når oversettelsen er klar, går den gjennom Apple sin TTS-motor:
+                            Nyere versjoner bruker en neural vocoder (WaveRNN/HiFi-GAN-lignende)
+                            Genererer naturlig tale i sanntid
+                            Kan strømme lydbitene direkte til AirPods før hele setningen er generert
+                            Det betyr at du hører taleoversettelsen nesten samtidig som den produseres.</p>
+                    </figure>
+
+                    <figure class="slide">
+                        <h2> Two-Way Conversation Loop </h2>
+                        <p>Hele pipeline er designet for full-dupleks flyt:
+                            Inngående tale fra den andre personen → iPhone-mikrofonen (eller AirPods hvis du bruker
+                            Listen Mode)
+                            ASR → NMT → TTS
+                            Lyd sendes til AirPods og tekst vises i Translate-appen
+                            Apple bruker parallell prosessering + buffering for å gjøre samtalen så “live” som mulig.
+                        </p>
+                    </figure>
+
+                    <figure class="slide">
+                        <h2> Latency-optimalisering </h2>
+                        <p>For å redusere forsinkelser gjør Apple blant annet:
+                            Streaming inference i alle ledd (ASR, MT, TTS)
+                            Hardware-akselerasjon via Neural Engine
+                            End-to-end tilpasning mellom AirPods-chip og iPhone-chip
+                            Lokal caching av språkhint og akustiske mønstre
+                            Aggressiv komprimering av mellomrepresentasjoner
+                            Dette gir typisk total forsinkelse på ~200–500 ms.
+                        </p>
+                    </figure>
+
+
                 </div>
 
                 <button class="arrow right">▶</button>
@@ -145,7 +206,7 @@
 
         <div class="nederst">
             <p>© 2025 NEONET – Alle rettigheter forbeholdt.</p>
-            <img src="../bilder/logo.png" alt="">
+            <img src="bilder/logo.png" alt="">
         </div>
     </footer>
 </body>
