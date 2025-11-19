@@ -122,10 +122,14 @@ figcaption {
   margin-top: 50px;
   margin-bottom: 50px;
   border: 1px solid black;
+  text-decoration: none;
+  color: black;
+
 
 }
 
 .sakerimg {
-  padding: 30px;
+  height: 40%;
   border: 1px solid black;
+  object-fit: cover;
 }
