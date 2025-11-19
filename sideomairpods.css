@@ -1,3 +1,31 @@
+.topp h1 {
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.topp{
+  margin-top: 100px;
+}
+.topp h2{
+  margin-bottom: 20px;
+}
+
+.infotekst h2{
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+.tjukk{
+  font-weight: bolder;
+}
+
+.infotekst p{
+   margin-top:  30px;
+   margin-bottom: 30px;
+   line-height: 1.5;
+
+}
+
 section {
     max-width: 1000px;
     margin: auto;
