@@ -3,10 +3,18 @@ section {
     margin: auto;
 }
 
+h1, h2, h3 {
+    margin: 20px 0;
+}
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
 .introbilde {
     display: grid;
-    grid-template-columns: 2fr 1fr; 
-    border: 1px solid black;
+    grid-template-columns: 1fr 1fr; 
+    
 }
 
 .journalistbox {
@@ -20,11 +28,15 @@ section {
 
 .journalister {
     border: 1px solid black;
-    width: 100px;
-    height: 50px;
+    width: 150px;
+    height: 80px;
     color: hotpink;
     font-weight: bold; 
     padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .journalist {
