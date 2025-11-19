@@ -34,7 +34,8 @@ nav a {
 
 nav a:hover {
     background-color: rgb(255, 6, 197);
-    filter: brightness(1.2) color: black;
+    filter: brightness(1.2);
+    color: black;
 
 
 }
