@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="GenerellCSS/GenerellCSS.css">
-    <link rel="stylesheet" href="malartikkel.css">
+    <link rel="stylesheet" href="sideomairpods.css">
     <link rel="stylesheet" href="headerogfooter/footer.css">
     <link rel="stylesheet" href="headerogfooter/header.css">
 </head>
@@ -28,10 +28,10 @@
     </header>
 
     <main>
-        <section>
+        <section class="topp">
 
-            <h1> Airpods live translation </h1>
-            <h2> Denne saken handler om ... </h2>
+            <h1> Apple avslører live oversettelse med Airpods </h1>
+            <h2> Nå kan man med AirPods, overvinne språkbarrierer mens du reiser eller navigerer i fremmed land. </h2>
 
             <div class="introbilde">
                 <div> <img src="bilder/pc.jpg.avif">
@@ -50,21 +50,28 @@
                         Jenny
                         <div class="journalist"> Journalist </div>
                     </div>
-
                 </div>
         </section>
 
         <section class="infotekst">
-            <h2> Dette skjedde ... </h2>
-            <p> AirPods kan oversette samtaler med Live Translation når de er koblet til en iPhone med Apple
-                Intelligence aktivert. For å bruke funksjonen, sett AirPods i ørene, åpne Oversett-appen på iPhonen,
+            <p> Apple lanserte i september 2025 "Live Translation" for Airpods. Nå kan Airpods oversette samtaler med en
+                funksjon kalt Liveoversetting. Med Airpods kan du nå få en sanntidsoversettelse av tale mens du snakker
+                med noen som bruker et annet språk. 
+               <p class="tjukk"> Airpods sin live oversetting funker slik: </p>
+               <ul>
+                <li>Du har AirPods i ørene.</li>
+                <li>En annen person snakker til deg på et annet språk.</li>
+                <li>iPhonen tolker språket og oversetter det med én gang.</li>
+                <li>Du hører oversettelsen direkte i AirPods.</li>
+                <li>Du kan selv svare, og stemmen din oversettes tilbake til den andre personen.</li>
+               </ul>
+
+            </p>
+            <img src="bilder/pc.jpg.avif">
+            <p> For å bruke funksjonen, sett AirPods i ørene, åpne Oversett-appen på iPhonen,
                 trykk på "Direkte", velg språkene og trykk "Start oversetting". Du kan også starte en samtale ved å
                 holde på stilken på begge AirPods samtidig eller be Siri om å starte oversetting.
             </p>
-            <img src="bilder/pc.jpg.avif">
-            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, maxime quidem cumque delectus
-                voluptatum odio dolor dolorem sed repellat commodi nostrum amet qui temporibus, ut obcaecati deleniti
-                accusamus architecto et?</p>
 
             <h2> Dette skjedde ... </h2>
             <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, maxime quidem cumque delectus
@@ -77,78 +84,84 @@
 
 
 
-            <h1> Hvordan funker det</h1>
+            <h1> Teknologien bak panseret </h1>
             <div class="carousel">
                 <button class="arrow left">◀</button>
 
                 <div class="track">
                     <figure class="slide">
                         <h2> Signalinnhenting fra AirPods </h2>
-                        <p> AirPods Pro/Max bruker:
+                        <p> AirPods Pro/Max bruker: </p>
                         <ul>
                             <li>Beamforming-mikrofoner for å isolere stemmen din</li>
-                            <li>Støykansellering (ANC/Hear-Through) for å forbedre signal-til-støy-forholdet</li>
+                            <li>Støykansellering for å forbedre signal-til-støy-forholdet</li>
                             <li>On-device DSP i H1/H2-chipen for å gi iPhone et renset talefragment</li>
                         </ul>
-                        Dette betyr at stemmen din blir “pre-prosessert” før den sendes til iPhone, noe som gjør
-                        talegjenkjenningen mer nøyaktig.</p>
+                        <p> Dette betyr at stemmen din blir “pre-prosessert” før den sendes til iPhone, noe som gjør
+                            talegjenkjenningen mer nøyaktig.</p>
                     </figure>
 
                     <figure class="slide">
                         <h2> Real-Time Speech Recognition </h2>
-                        <p> Når lyden når iPhone, går den gjennom Apple sin on-device ASR-modell:
-                            Basert på nevrale nettverk (encoder–decoder modeller)
-                            Benytter feature extraction (log-Mel-spectrogram etc.)
-                            Kjører streaming-mode, der modellen gir løpende partielle resultater (ikke venter til du er
-                            ferdig å snakke)
-                            Apple bruker en variant av en Conformer-modell (Convolution + Transformer), som er optimal
-                            for mobil chip-arkitektur.</p>
+                        <p> Når lyden når iPhone, går den gjennom Apple sin on-device ASR-modell: </p>
+                        <ul>
+                            <li>Basert på nevrale nettverk </li>
+                            <li>Benytter feature extraction </li>
+                            <li>Kjører streaming-mode, der modellen gir løpende partielle resultater </li>
+                        </ul>
+                        Apple bruker en variant av en Conformer-modell (Convolution + Transformer), som er optimal
+                        for mobil chip-arkitektur.</p>
                     </figure>
 
                     <figure class="slide">
                         <h2> Maskinoversettelse </h2>
                         <p>Når ASR gir en løpende transkripsjon, sendes tekstfragmentene til Apple sin Neural Machine
-                            Translation-modell, som:
-                            er en Transformer-basert sekvens-til-sekvens-modell
-                            kjører enten on-device for støttede språk eller med privat relay til Apple-servere hvis
-                            språket
-                            krever større modeller
-                            oversetter i del-setninger («segmenting») for å gi rask respons uten å vente på hele
-                            setninger
-                            Apple optimaliserer mye med:
-                            BPE-tokenisering (Byte Pair Encoding)
-                            latensoptimalisert decoding (short beam search)</p>
+                            Translation-modell, som: </p>
+                        <ul>
+                            <li>er en Transformer-basert sekvens-til-sekvens-modell</li>
+                            <li>kjører enten on-device for støttede språk eller med privat relay til Apple-servere hvis
+                                språket krever større modeller </li>
+                            <li>oversetter i del-setninger («segmenting») for å gi rask respons uten å vente på hele
+                                setninger </li>
+                        </ul>
+
                     </figure>
 
                     <figure class="slide">
                         <h2> Tekst-til-tale </h2>
-                        <p>Når oversettelsen er klar, går den gjennom Apple sin TTS-motor:
-                            Nyere versjoner bruker en neural vocoder (WaveRNN/HiFi-GAN-lignende)
-                            Genererer naturlig tale i sanntid
-                            Kan strømme lydbitene direkte til AirPods før hele setningen er generert
-                            Det betyr at du hører taleoversettelsen nesten samtidig som den produseres.</p>
+                        <p>Når oversettelsen er klar, går den gjennom Apple sin TTS-motor: </p>
+                        <ul>
+                            <li>Nyere versjoner bruker en neural vocoder (WaveRNN/HiFi-GAN-lignende)</li>
+                            <li>Genererer naturlig tale i sanntid</li>
+                            <li>Kan strømme lydbitene direkte til AirPods før hele setningen er generert</li>
+                        </ul>
+                        <p>Det betyr at du hører taleoversettelsen nesten samtidig som den produseres.</p>
                     </figure>
 
                     <figure class="slide">
                         <h2> Two-Way Conversation Loop </h2>
-                        <p>Hele pipeline er designet for full-dupleks flyt:
-                            Inngående tale fra den andre personen → iPhone-mikrofonen (eller AirPods hvis du bruker
-                            Listen Mode)
-                            ASR → NMT → TTS
-                            Lyd sendes til AirPods og tekst vises i Translate-appen
-                            Apple bruker parallell prosessering + buffering for å gjøre samtalen så “live” som mulig.
+                        <p>Hele pipeline er designet for full-dupleks flyt:</p>
+                        <ol>
+                            <li>Inngående tale fra den andre personen → iPhone-mikrofonen (eller AirPods hvis du bruker
+                                Listen Mode)</li>
+                            <li>ASR → NMT → TTS</li>
+                            <li>Lyd sendes til AirPods og tekst vises i Translate-appen</li>
+                        </ol>
+                        Apple bruker parallell prosessering + buffering for å gjøre samtalen så “live” som mulig.
                         </p>
                     </figure>
 
                     <figure class="slide">
                         <h2> Latency-optimalisering </h2>
-                        <p>For å redusere forsinkelser gjør Apple blant annet:
-                            Streaming inference i alle ledd (ASR, MT, TTS)
-                            Hardware-akselerasjon via Neural Engine
-                            End-to-end tilpasning mellom AirPods-chip og iPhone-chip
-                            Lokal caching av språkhint og akustiske mønstre
-                            Aggressiv komprimering av mellomrepresentasjoner
-                            Dette gir typisk total forsinkelse på ~200–500 ms.
+                        <p>For å redusere forsinkelser gjør Apple blant annet:</p>
+                        <ul>
+                            <li>Streaming inference i alle ledd (ASR, MT, TTS)</li>
+                            <li>Hardware-akselerasjon via Neural Engine</li>
+                            <li>End-to-end tilpasning mellom AirPods-chip og iPhone-chip</li>
+                            <li>Lokal caching av språkhint og akustiske mønstre</li>
+                            <li>Aggressiv komprimering av mellomrepresentasjoner</li>
+                        </ul>
+                        <p>Dette gir typisk total forsinkelse på ~200–500 ms.
                         </p>
                     </figure>
 
