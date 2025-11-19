@@ -8,6 +8,7 @@ section {
 
 
 
+
 }
 
 
@@ -15,6 +16,7 @@ section {
 
 body {
     min-height: 100vh;
+
 
 
 }
@@ -33,6 +35,7 @@ body::before {
     z-index: -2;
 
     animation: kenburns-bak 10s ease-in-out infinite alternate;
+
 }
 
 
@@ -75,32 +78,54 @@ body::after {
 
 
 
+
 .sak {
 
-    border: 25px solid transparent;
-    border-image-source: url(bilder/bakgrunn-techno.webp);
+    border: 15px solid transparent;
+    border-image-source: url(bilder/bakgrunn-div.webp);
+
     border-image-slice: 1;
     border-image-repeat: round;
 
 
+
     transition: 0.3s ease-in;
 
-    background-color: white;
-    text-align: center;
+    background-color: rgb(31, 24, 56);
+
     margin: 50px;
+    font-weight: bold;
+
+
+
 
     box-shadow: 3px 3px 10px rgb(121, 18, 97);
-
+    font-size: 50px;
+    color: rgb(255, 6, 197);
 
 }
+
+.sak a {
+    text-decoration: none;
+}
+
+.sak p {
+    margin: 25px;
+    color: rgb(255, 6, 197);
+}
+
+.liten_p {
+    font-size: 15px;
+}
+
+
 
 .sak:hover {
     scale: 1.2;
     box-shadow: 20px 20px 50px rgb(255, 6, 197);
     filter: opacity(1);
-
-
-
+    text-decoration: underline;
+    filter: brightness(1.2)
 }
 
 .sak img {
