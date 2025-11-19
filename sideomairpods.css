@@ -19,6 +19,10 @@
   font-weight: bolder;
 }
 
+.margin {
+    margin-top: 100px;
+}
+
 .infotekst p{
    margin-top:  30px;
    margin-bottom: 30px;
@@ -34,20 +38,17 @@ section {
 .introbilde {
     display: grid;
     grid-template-columns: 2fr 1fr; 
-    border: 1px solid black;
 }
 
 .journalistbox {
     display: flex;
     flex-direction: column; 
-    justify-content: center;
-    align-items: center;
+    margin: 20px;
     gap: 20px;
 
 }
 
 .journalister {
-    border: 1px solid black;
     width: 100px;
     height: 50px;
     color: hotpink;
@@ -70,6 +71,9 @@ section {
   position: relative;
   max-width: 800px;
   margin: auto;
+  background-color: rgb(252, 177, 215);
+  padding: 50px;
+  margin-top: 20px;
 }
 
 .track {
@@ -77,11 +81,6 @@ section {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-}
-
-.track img {
-  flex-shrink: 0;
-  scroll-snap-align: center;
 }
 
 .arrow{
@@ -105,6 +104,25 @@ section {
   width: 100%;
   scroll-snap-align: center;
 }
+
+ul {
+    display: block;
+    padding-left: 20px;
+}
+
+ol {
+    display: block;
+    padding-left: 20px;
+}
+
+.slide p {
+    margin-bottom: 10px;
+}
+
+.slide h2 {
+    margin: auto;
+}
+
 
 figcaption {
   margin-top: 6px;
