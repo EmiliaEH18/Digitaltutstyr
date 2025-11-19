@@ -1,4 +1,4 @@
-header{
+header {
     background-color: black;
     height: 100px;
     display: flex;
@@ -7,58 +7,61 @@ header{
     box-shadow: 0 0 25px rgb(255, 6, 197);
 }
 
-.bildelogo img{
+.bildelogo img {
     object-fit: cover;
     overflow: hidden;
     height: 90px;
     margin-left: 50px;
 }
 
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     width: 50%;
 
 }
-nav a{
+
+nav a {
     text-decoration: none;
     color: white;
     letter-spacing: 1px;
     font-size: 20px;
     padding: 10px;
+    border-radius: 30px;
 }
 
-nav a:hover{
+nav a:hover {
     background-color: rgb(255, 6, 197);
-    transition: 0.35s ease;
-    border-radius: 30px;
+    transition: 0.35s ease-in-out;
     color: black;
 
 
 }
 
-@media (width<580px){
-    nav a{
+@media (width<580px) {
+    nav a {
         font-size: 13px;
     }
 
-    .bildelogo img{
+    .bildelogo img {
         margin-left: 30px;
     }
 }
-@media(width<430px){
 
-    .bildelogo img{
-     
+@media(width<430px) {
+
+    .bildelogo img {
+
         margin-left: 5px;
         align-items: center;
     }
-    nav{
+
+    nav {
         width: 80%;
     }
 
-    nav a{
+    nav a {
         font-size: 10px;
     }
 
