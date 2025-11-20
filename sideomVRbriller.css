@@ -3,23 +3,32 @@ section {
     margin: auto;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     margin: 20px 0;
 }
+
 h1 {
     font-size: 60px;
     font-weight: bold;
 }
 
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+
 .introbilde {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
-    
+    grid-template-columns: 2fr 1fr;
+
 }
 
 .journalistbox {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -31,7 +40,7 @@ h1 {
     width: 150px;
     height: 80px;
     color: hotpink;
-    font-weight: bold; 
+    font-weight: bold;
     padding: 5px;
     display: flex;
     flex-direction: column;
@@ -48,52 +57,62 @@ h1 {
 
 .infotekst {
     padding: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+
 }
 
 .carousel {
-  position: relative;
-  max-width: 800px;
-  margin: auto;
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
 }
 
 .track {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
 }
 
 .track img {
-  flex-shrink: 0;
-  scroll-snap-align: center;
+    flex-shrink: 0;
+    scroll-snap-align: center;
 }
 
-.arrow{
-  position:absolute;
-  top:50%;
-  transform:translateY(-50%);
-  background: rgba(0,0,0,0.45);
-  color:white;
-  border:none;
-  padding:.6rem;
-  cursor:pointer;
-  border-radius:6px;
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.45);
+    color: white;
+    border: none;
+    padding: .6rem;
+    cursor: pointer;
+    border-radius: 6px;
 }
 
-.arrow.left{ left:8px; }
-.arrow.right{ right:8px; }
+.arrow.left {
+    left: 8px;
+}
+
+.arrow.right {
+    right: 8px;
+}
 
 
 .slide {
-  flex-shrink: 0;
-  width: 100%;
-  scroll-snap-align: center;
+    flex-shrink: 0;
+    width: 100%;
+    scroll-snap-align: center;
 }
 
 figcaption {
-  margin-top: 6px;
-  font-size: 0.9rem;
-  color: #444;
+    margin-top: 6px;
+    font-size: 0.9rem;
+    color: #444;
 }
 
 .andresaker {
@@ -118,4 +137,8 @@ figcaption {
 .sakerimg {
     padding: 30px;
     border: 1px solid black;
+}
+
+.midtbilde {
+    margin: 40px 0;
 }
