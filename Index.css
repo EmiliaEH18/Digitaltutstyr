@@ -21,6 +21,7 @@ body {
 
 
 
+
 body::before {
     content: "";
     position: fixed;
@@ -99,6 +100,8 @@ body::after {
     box-shadow: 3px 3px 10px rgb(121, 18, 97);
     font-size: 50px;
     color: rgb(255, 6, 197);
+
+    overflow: hidden;
 
 }
 
