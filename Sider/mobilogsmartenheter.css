@@ -87,3 +87,72 @@ img {
     object-fit: cover;
     overflow: hidden;
 }
+
+@media (width<1000px){
+    .topp{
+        font-size: 80px;
+    }
+
+    .container, 
+    .container.reverse{
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+}
+
+@media (width<780px){
+    .liten{
+        width: 100%;
+
+    }
+
+    .stor{
+        font-size: 30px;
+    }
+
+    .topp{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container{
+        width: 300px;
+    }
+
+    .info{
+        margin-right: 70px;
+        margin-left: 70px;
+    }
+}
+
+@media (width<570px){
+    .stor{
+        font-size: 15px;
+    }
+
+    .rundt{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+       
+    }
+
+    .info{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .info p{
+        font-size: 20px;
+    }
+
+    .topp{
+        font-size: 40px;
+    }
+}

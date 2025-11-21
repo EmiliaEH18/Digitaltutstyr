@@ -93,4 +93,33 @@ figcaption {
   text-align: center;
 }
 
+@media (width<1030px){
+  .carousel{
+    width: 600px;
+  }
+
+}
+
+@media (width<840px){
+  .carousel{
+    width: 400px;
+  }
+}
+
+@media (width<700px){
+  .topp{
+    font-size: 60px;
+  }
+
+  .carousel{
+    width: 250px;
+  }
+
+  .info h1{
+    font-size: 50px;
+  }
+}
+
+
+
 

@@ -133,3 +133,8 @@ figcaption {
   border: 1px solid black;
   object-fit: cover;
 }
+
+.andresaker p,
+.andresaker h2{
+  padding: 10px;
+}
