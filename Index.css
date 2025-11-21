@@ -1,10 +1,11 @@
 section {
     display: grid;
-    grid-template-columns: repeat(3, 250px);
+    grid-template-columns: repeat(3, 300px);
     gap: 20px;
     justify-content: center;
     padding: 50px;
     min-height: 100vh;
+
 
 
 
@@ -87,6 +88,7 @@ body::after {
 
 
 
+    height: auto;
     transition: 0.3s ease-in;
 
     background-color: rgb(31, 24, 56);
@@ -94,6 +96,7 @@ body::after {
     margin: 50px;
     font-weight: bold;
 
+    height: fit-content, auto;
 
 
 
@@ -110,7 +113,7 @@ body::after {
 }
 
 .sak p {
-    margin: 25px;
+    margin: 15px;
     color: rgb(255, 6, 197);
 }
 
@@ -138,18 +141,28 @@ body::after {
 
 .sak1 {
     margin: 0;
+    font-size: 30px;
 
 }
 
-
 .sak2 {
-    grid-column-start: 1;
-    grid-column-end: 3;
+    font-size: 40px;
+
 }
 
 .sak3 {
     grid-column-start: 1;
     grid-column-end: 4;
+}
+
+
+.bred2 {
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    justify-content: center;
+    gap: 20px;
+
+
 }
 
 #audio {
