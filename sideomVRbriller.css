@@ -133,14 +133,20 @@ figcaption {
     border: 1px solid black;
     text-decoration: none;
     color: black;
-    padding: 20px;
+
 }
 
 .sakerimg {
-    padding: 30px;
+    height: 40%;
+    object-fit: cover;
     border: 1px solid black;
 }
 
 .midtbilde {
     margin: 40px 0;
+}
+
+.andresaker p,
+.andresaker h2 {
+  padding: 10px;
 }
