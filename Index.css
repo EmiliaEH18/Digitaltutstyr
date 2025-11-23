@@ -167,8 +167,7 @@ body::after {
 
 }
 
-<<<<<<< HEAD
-=======
+
 .bred3 {
     display: grid;
     grid-template-columns: 800px 300px; 
@@ -189,7 +188,7 @@ body::after {
 #audio {
     background-color: white;
 }
->>>>>>> e26d5fb16b276546be76aed042cdbcb84ee88c98
+
 
 @media (width < 950px) {
     section {
