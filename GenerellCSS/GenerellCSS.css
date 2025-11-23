@@ -6,11 +6,21 @@
     box-sizing: border-box;
 }
 
-img, video {
+img,
+video {
     width: 100%;
     display: block;
 }
 
 body {
     font-family: "Inter", sans-serif;
+}
+
+.saker {
+    transition: 0.35s ease-in-out;
+    box-shadow: 1px 1px 5px rgb(255, 6, 197);
+}
+
+.saker:hover {
+    scale: 1.1;
 }
