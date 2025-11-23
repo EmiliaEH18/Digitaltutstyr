@@ -202,19 +202,20 @@ body::after {
 
 
 @media (width < 950px) {
+
+
     section {
-        grid-template-columns: 1fr;
-        padding: 50px;
-        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
+
+
 
     .bred2 {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
-
-    
-
-
-
 
 }
