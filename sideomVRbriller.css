@@ -150,3 +150,43 @@ figcaption {
 .andresaker h2 {
   padding: 10px;
 }
+
+@media (width < 1020px) {
+    
+
+    .andresaker {
+        grid-template-columns: 1fr;
+        width: 50%;
+    }
+
+
+}
+
+@media (width < 600px) {
+    .introbilde {
+        grid-template-columns: 1fr;
+    }
+
+    .journalistbox {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .infotekst {
+        padding: 20px;
+    }
+
+    .andresaker {
+        width: 100%;
+    }
+}
+
+@media (width < 450px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .saker {
+        height: auto;
+    }
+}
