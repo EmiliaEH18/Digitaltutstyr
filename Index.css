@@ -1,6 +1,6 @@
 section {
     display: grid;
-    grid-template-columns: repeat(3, 300px);
+    grid-template-columns: repeat(3, 250px);
     gap: 20px;
     justify-content: center;
     padding: 50px;
@@ -14,6 +14,7 @@ section {
 
 body {
     min-height: 100vh;
+
 
 
 
@@ -89,7 +90,8 @@ body::after {
 
 
     height: auto;
-    transition: 0.3s ease-in;
+    transition: 0.5s ease-out;
+
 
     background-color: rgb(31, 24, 56);
 
@@ -126,9 +128,9 @@ body::after {
 .sak:hover {
     scale: 1.2;
     box-shadow: 20px 20px 50px rgb(255, 6, 197);
-    filter: opacity(1);
+
     text-decoration: underline;
-    filter: brightness(1.2)
+    filter: brightness(1.1)
 }
 
 .sak img {
