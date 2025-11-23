@@ -154,6 +154,8 @@ figcaption {
   margin-top: 50px;
   margin-bottom: 50px;
   border: 1px solid black;
+  text-decoration: none;
+  color: black;
 }
 
 .sakerimg {
