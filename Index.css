@@ -134,7 +134,7 @@ body::after {
 }
 
 .sak img {
-    height: auto;
+    height: 50%;
     object-fit: cover;
     object-position: top;
     object-position: left;
