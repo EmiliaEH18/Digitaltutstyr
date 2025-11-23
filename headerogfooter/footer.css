@@ -55,3 +55,14 @@
 
 }
 
+@media (width < 450px) {
+    .footercontainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nederst {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

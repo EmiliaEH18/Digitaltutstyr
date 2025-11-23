@@ -62,44 +62,7 @@ h2 {
 
 }
 
-.carousel {
-  position: relative;
-  max-width: 800px;
-  margin: auto;
-  padding: 20px;
-}
 
-.track {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-}
-
-.track img {
-  flex-shrink: 0;
-  scroll-snap-align: center;
-}
-
-.arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.45);
-  color: white;
-  border: none;
-  padding: .6rem;
-  cursor: pointer;
-  border-radius: 6px;
-}
-
-.arrow.left {
-  left: 8px;
-}
-
-.arrow.right {
-  right: 8px;
-}
 
 
 .slide {
@@ -149,8 +112,6 @@ figcaption {
 .andresaker h2 {
   padding: 10px;
 }
-
-
 
 @media (width < 1020px) {
     
