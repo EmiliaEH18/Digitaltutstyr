@@ -119,6 +119,11 @@ body::after {
     color: rgb(255, 6, 197);
 }
 
+.sak :not(.liten_p) :hover {
+    text-decoration: underline;
+
+}
+
 .liten_p {
     font-size: 15px;
 }
@@ -126,7 +131,7 @@ body::after {
 
 
 .sak.sak2.egen img {
-    height: 50%;
+    height: 60%;
 }
 
 
