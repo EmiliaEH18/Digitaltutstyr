@@ -130,8 +130,17 @@ body::after {
 
 
 
+.sak.sak2.egen img {
+    height: 60%;
+}
+
+
+
 .sak:hover {
     scale: 1.2;
+
+
+    text-decoration: underline;
     filter: brightness(1.1)
 }
 
@@ -170,7 +179,13 @@ body::after {
 }
 
 
-
+.bred3 {
+    display: grid;
+    grid-template-columns: 800px 300px;
+    justify-content: center;
+    gap: 5px;
+    grid-column: 1 / 4;
+}
 
 .langSak {
     font-size: 40px;
