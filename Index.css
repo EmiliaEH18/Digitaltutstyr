@@ -127,7 +127,7 @@ body::after {
 
 .sak:hover {
     scale: 1.2;
-    box-shadow: 20px 20px 50px rgb(255, 6, 197);
+    
 
     text-decoration: underline;
     filter: brightness(1.1)
@@ -167,6 +167,29 @@ body::after {
 
 }
 
+<<<<<<< HEAD
+=======
+.bred3 {
+    display: grid;
+    grid-template-columns: 800px 300px; 
+    justify-content: center;
+    gap: 5px;
+    grid-column: 1 / 4; 
+}
+
+.langSak {
+    font-size: 40px;
+}
+
+.sideSak {
+    font-size: 25px;
+}
+
+
+#audio {
+    background-color: white;
+}
+>>>>>>> e26d5fb16b276546be76aed042cdbcb84ee88c98
 
 @media (width < 950px) {
     section {
