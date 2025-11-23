@@ -208,6 +208,7 @@ body::after {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        
     }
 
 
@@ -217,5 +218,6 @@ body::after {
         flex-direction: column;
         flex-wrap: wrap;
     }
+
 
 }
